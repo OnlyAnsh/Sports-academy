@@ -59,7 +59,8 @@ app.get("/login", (req, res) => {
 
 })
 
-app.post("/loginUser", passport.authenticate('local', { failureFlash: true, failureRedirect: '/login' }), (req, res) => {
+app.post("/loginUser", passport.authenticate('local', { failureRedirect: '/login' }), (req, res) => {
+    console.log(req.user.username + " logged in")
     res.redirect("/home");
 })
 

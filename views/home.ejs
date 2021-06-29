@@ -22,12 +22,11 @@
             <li><A href="#yullop" id="scroll2">About Us</A></li>
             <li><A href="#pos" id="scroll1">Contact Us</A></li>
             <li><A href="#bo" id="scroll">More</A></li>
-            <li><A href="">
-                    <% console.log(currentUser) %>
-                        <% if(currentUser) { %>
-                            <%= currentUser.username %>
-                                <% } %>
-                </A></li>
+            <li>
+                <% if(currentUser) { %>
+                    <%= currentUser.username %>
+                        <% } %>
+            </li>
         </ul>
     </nav>
 
