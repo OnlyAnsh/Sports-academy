@@ -22,23 +22,14 @@
             <li><A href="#yullop" id="scroll2">About Us</A></li>
             <li><A href="#pos" id="scroll1">Contact Us</A></li>
             <li><A href="#bo" id="scroll">More</A></li>
-            <li><A href="">Club</A></li>
+            <li><A href="">
+                    <% console.log(currentUser) %>
+                        <% if(currentUser) { %>
+                            <%= currentUser.username %>
+                                <% } %>
+                </A></li>
         </ul>
     </nav>
-    <!-- <div class="p" id="ds">
-    <ul>
-      <li><a href="#yullop" id="scroll2">About Us</a>
-      <li>
-      <li><a href="#pos" id="scroll1" style="transition:2s">Contact us</a></li>
-      <li><a href="#bo" id="scroll" style="transition:2s">More</a></li>
-
-
-      <li><a href="" class="active">Club</a></li>
-
-    </ul>
-    <span id="pet">Get your Sports</SPAN>
-  </div> -->
-
 
     <div class="slideshow-container">
         <div class="mySlides fade">
@@ -70,7 +61,9 @@
     </div>
 
     <a href="">
-        <button class="ol" type="submit" value="Google Search">Game Club </BUTTON>
+        <form action="/login" method="GET">
+            <button class="ol" type="submit" value="Google Search">Game Club </BUTTON>
+        </form>
         <br>
     </a>
 

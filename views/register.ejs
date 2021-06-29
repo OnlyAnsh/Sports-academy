@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-
 <body>
     <nav>
         <div class="logo">
@@ -18,40 +17,42 @@
             <li><A href="#yullop" id="scroll2">About Us</A></li>
             <li><A href="#pos" id="scroll1">Contact Us</A></li>
             <li><A href="#bo" id="scroll">More</A></li>
-            <li><A></A></li>
+            <li><A href="">Club</A></li>
         </ul>
     </nav>
     <div class="body">
 
         <div class="container1">
-            <div class="title">Login</div>
+            <div class="title">Registration</div>
             <div class="content">
-                <form action="/loginUser" method="POST">
+                <form action="/registerUser" method="POST">
                     <div class="user-details">
 
                         <div class="input-box">
                             <label class="details" for="username">Username</label>
                             <input type="text" placeholder="Enter your username" id="username" name="username" required>
                         </div>
+                        <div class="input-box">
+                            <label class="details" for="email">Email</span>
+                                <input type="text" placeholder="Enter your email" id="email" name="email" required>
+                        </div>
 
                         <div class="input-box">
                             <label class="details">Password</label>
-                            <input type="password" placeholder="Enter your password" name="password" required>
+                            <input type="password" placeholder="Enter your password" name="pswd" required>
                         </div>
-
+                        <div class="input-box">
+                            <label class="details">Confirm Password</label>
+                            <input type="password" placeholder="Confirm your password" name="cpswd" required>
+                        </div>
                     </div>
 
 
-                    <button>Login
+                    <button>Register
                     </button>
 
-                    New to Bice ? <a href="/register"> Register here</a>
-
+                </form>
             </div>
-        </div>
-        <div class="message">
-            <p>You won't get Past if your data is wrong or not Registered</p>
-            <p style="font-weight: 500;">We have no method of resetting Password so dont lose it</p>
         </div>
     </div>
     <script>
@@ -65,8 +66,6 @@
             }
         }
     </script>
-</body>
-
 </body>
 
 </html>
